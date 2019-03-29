@@ -1,0 +1,25 @@
+<html>
+<head></head>
+<body>
+<div style="font-size: 50px; color:red" class="abc">
+Hello How Are you?/
+</div>
+
+
+<div style="font-size: 50px; color:green" class="abc">
+minal abhi
+</div>
+</body>
+</html>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+let abc = $('div');
+console.log('div',abc);
+
+for(let i=0;i<abc.length;i++){
+	for(let j=0;j<(abc[i].attributes).length;j++){
+	$('div').removeAttr("style")
+	$('div').attr("style", "color:yellow")
+	}
+}
+</script>
